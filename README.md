@@ -1,13 +1,16 @@
 #Javascript Crash Course - Magic 8Ball
-1 - Context [HTML vs CSS vs JavaScript](http://t3patterson.github.io/Tuts-JS-Crashcourse-Magic-8Ball/)
+###Context: HTML | CSS | Javascript
+[Examples of the demo with HTML , HTML + CSS,  HTML + CSS + JavaScript](http://t3patterson.github.io/Tuts-JS-Crashcourse-Magic-8Ball/)
 
-2 - Crash Course Codepen 
+###The Crash Course:  on Codepen 
 [Starting Point](http://codepen.io/tphdevdrop/pen/Yqgjmw)
 [Complete Demo](http://codepen.io/tphdevdrop/pen/xVmMay)  
 
-
-###The Walkthrough (in codepen)
+###Explanation of Walkthrough (in codepen)
 ##### 1) Set up a list of strings AKA an array
+
+Talk about variable assignment with `var`, the `String` datatype, and `Array` datatype.
+
 ```js
 var predictionsList = [
   'Go for it!',
@@ -20,18 +23,21 @@ var predictionsList = [
 ]
 ```
 
-####2) Show how to access the array
+#####2) Show how to access the array
+
 make sure to note that they are indexed starting at *0*
+
 ```js
 alert(predictionsList[0])
 alert(predictionsList[1])
 ```
 
 
-####3) Create basic interactivity on a button:
+#####3) Create basic interactivity on a button:
 Emphasize
 1 -- 
 we need to 'select' the element that receives an event (w/ `document.querySelector`)
+
 ```js
 var shakeBtn = document.querySelector('button#shake')
 ```
@@ -46,19 +52,23 @@ shakeBtn.addEventListener()
 3 -- 
 we tell `.addEventListener()` the event-type to listen for (in this case a 
 'click') 
+
 ```js
 shakeBtn.addEventListener('click')
 ```
 
 4-- 
 we pass a function (i.e. a set of instructions) as the 2nd argument to `addEventListener()` that will execute when the event happens
+
 ```
 shakeBtn.addEventListener('click', putPredictionOnPage)
 
 ```
 
-5--
-we will create the function for what we want to happen
+#####3) Write the 'callback' function
+
+We will create the function for what we want to happen when the click event happens on the #shake button
+
 ```js
 
 function putPredictionOnPage(){

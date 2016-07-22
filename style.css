@@ -1,0 +1,94 @@
+h2 {
+  font-family: "Helvetica";
+  background: #2C3E50;
+  margin: 0; padding: 10px;
+  color: #fff; font-weight: 200;   
+}
+
+button{
+  display: block;
+  margin: 20px auto;
+}
+
+button#shake{
+  display: block;
+  width: 120px;
+  height: 60px; line-height: 40px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background: #96281B;
+  border: 2px solid #fff;
+  font-size: 18px;
+  transition: .2s;
+}
+button#shake:hover{
+  background: #F22613;
+}
+
+button#reset{
+  background: #DADFE1;
+  padding: 10px;
+  border: 0;
+  
+}
+
+button:hover{
+  border: 2px #333 solid;
+  cursor: pointer;
+}
+button:focus{
+  outline: 0 ; border: 0;
+}
+
+.ball{
+  position: relative;
+  margin: 0 auto;
+  background-image:
+    radial-gradient(
+      circle at top right,
+      #ddd,
+      #333,
+      #333,
+      #222
+    );
+  width: 450px;  
+  height: 450px;
+  padding: 10px;
+  border-radius: 50%;
+  
+}
+
+.triangle {
+  z-index: 2;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border-right: 110px transparent solid;
+  border-left: 110px transparent solid;
+  border-top: 190px #1F3A93 solid;
+  opacity: .49;
+}
+
+.prediction{
+  font-size: 21px;
+  font-family: 'Helvetica';
+  z-index: 1;
+  color: #fff;
+  width: 100px;
+  position: absolute;
+  top: 37%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.shaker{
+  animation: shake .5s 
+}
+
+@keyframes shake {
+    20% {left: 0px;}
+    40% {left: 20px;}
+    60% {left: -20px;}
+    80% {left: 20px;}
+    100% {left: 0px}
+}

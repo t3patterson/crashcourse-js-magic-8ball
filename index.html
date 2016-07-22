@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Magic 8 Ball</title>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+  <style>
+    .container{
+      width: 90%;
+      max-width: 500px;
+      margin: 0 auto;
+      font-family: 'Josefin Sans', 'Helvetica Neue', 'Helvetica';
+
+    }
+
+    a{
+      display: block;
+      background: tomato;
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 50px;
+      transition: all .2s;
+      font-size: 36px;
+    }
+
+    a:nth-of-type(1){background: #BFBFBF; opacity: .5;}
+    a:nth-of-type(2){background: #5C97BF; opacity: .75;}
+    a:nth-of-type(3){background: #D64541;}
+    a:nth-of-type(4){background: #3A539B;}
+
+
+      a:hover{
+        padding: 70px;
+      }
+
+    span{
+      background: #F4B350;
+      font-size: 42px;
+      line-height: 48px;
+      padding: 15px;
+      color: #333;
+      font-weight: 700;
+    }
+
+    b{
+      display: inline-block;
+      width: 60px; height: 60px; line-height: 66px;
+      background: #333;
+      border-radius: 50%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div></div>
+    <h1>Examples</h1>
+    <a href="./html-only.html">HTML Only</a>
+    <a href="./html-css.html">HTML + CSS</a>
+    <a href="./html-css-js.html">HTML + CSS + <span>JS</span></a>
+    
+    <hr>
+    <h1>The <span>JS</span> Walkthrough</h1>
+    <p>@ codepen.io</p>
+    <a href="http://codepen.io/tphdevdrop/pen/Yqgjmw" target="_blank"> Magic <b>8</b>
+    </a>
+  </div>
+
+</body>
+</html>
